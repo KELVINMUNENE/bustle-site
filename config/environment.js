@@ -17,11 +17,19 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyDWpDq7mnLtNq7TxmR-B_dTjUKt2IzYM48",
+      authDomain: "bustle-site.firebaseapp.com",
+      databaseURL: "https://bustle-site.firebaseio.com",
+      storageBucket: "bustle-site.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

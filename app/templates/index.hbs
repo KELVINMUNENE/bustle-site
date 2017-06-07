@@ -1,0 +1,11 @@
+<h2>Today's Top Stories</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec orci at eros posuere tristique. Phasellus vel elementum neque. Morbi vel venenatis arcu. Donec et rutrum dolor, eu blandit libero. Maecenas pellentesque elit quam, feugiat dapibus sem blandit non. Cras ut lacinia felis. Cras malesuada vitae tellus in rhoncus. Aliquam ac lectus et enim placerat commodo. Sed rutrum justo id velit suscipit luctus. Donec mollis lobortis lectus, at blandit turpis porta et. Vivamus suscipit felis ac congue elementum. Duis placerat sagittis massa nec pharetra. Donec aliquam magna vel tortor aliquam, ac placerat ex laoreet.
+
+<ul>
+  {{#each model as |site|}}
+     <li>This {{site.headline}} {{site.photo}} {{site.author}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
